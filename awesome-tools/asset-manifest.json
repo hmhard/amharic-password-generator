@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/awesome-tools/static/css/main.cabb6fc4.css",
+    "main.js": "/awesome-tools/static/js/main.e9eb9397.js",
+    "static/js/787.93df429b.chunk.js": "/awesome-tools/static/js/787.93df429b.chunk.js",
+    "index.html": "/awesome-tools/index.html",
+    "main.cabb6fc4.css.map": "/awesome-tools/static/css/main.cabb6fc4.css.map",
+    "main.e9eb9397.js.map": "/awesome-tools/static/js/main.e9eb9397.js.map",
+    "787.93df429b.chunk.js.map": "/awesome-tools/static/js/787.93df429b.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.cabb6fc4.css",
+    "static/js/main.e9eb9397.js"
+  ]
+}
