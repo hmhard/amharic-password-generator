@@ -2,7 +2,6 @@
   "name": "amharic-password-generator",
   "version": "0.1.0",
   "private": false,
-  "homepage": "/awesome-tools/",
   "dependencies": {
     "@material-tailwind/react": "^1.4.2",
     "@testing-library/jest-dom": "^5.16.5",
