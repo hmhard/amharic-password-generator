@@ -4,8 +4,7 @@ import { Button, Card, CardBody, Checkbox, Input, Option, Select, Typography } f
 function App() {
   const generateText = () => {
     let result = '';
-    const amharic_letters = 'ሀሁሂሃሄህሆለሉሊላሌልሎሐሑሒሓሔሕሖመሙሚማሜምሞሠሡሢሣሤሥሦረሩሪራሬርሮሰሱሲሳሴስሶሸሹሺሻሼሽሾቀቁቂቃቄቅቆቇበቡቢባቤብቦቨቩቪቫቬቭቮተቱቲታቴትቶቸቹቺቻቼችቾነኑኒናኔንኖኘኙኚኛኜኝኞአኡኢኣኤእኦከኩኪካኬክኮኰኲኳኴኵኸኹኺኻኼኽኾወዉዊዋዌውዎዏዐዑዒዓዔዕዖዘዙዚዛዜዝዞዟዠዡዢዣዤዥዦየዩዪያዬይዮዯደዱዲዳዴድዶዷዸዹዺዻዼዽዾዿጀጁጂጃጄጅጆጇገጉጊጋጌግጎጏጐጒጓጔጕጠጡጢጣጤጥጦጧጨጩጪጫጬጭጮጯጰጱጲጳጴጵጶጷጸጹጺጻጼጽጾፀፁፂፃፄፅፆፇፈፉፊፋፌፍፎፐፑፒፓፔፕፖፗፘ'
-      ;
+    const amharic_letters = 'ሀሁሂሃሄህሆለሉሊላሌልሎሐሑሒሓሔሕሖመሙሚማሜምሞሠሡሢሣሤሥሦረሩሪራሬርሮሰሱሲሳሴስሶሸሹሺሻሼሽሾቀቁቂቃቄቅቆቇበቡቢባቤብቦቨቩቪቫቬቭቮተቱቲታቴትቶቸቹቺቻቼችቾነኑኒናኔንኖኘኙኚኛኜኝኞአኡኢኣኤእኦከኩኪካኬክኮኰኲኳኴኵኸኹኺኻኼኽኾወዉዊዋዌውዎዏዐዑዒዓዔዕዖዘዙዚዛዜዝዞዟዠዡዢዣዤዥዦየዩዪያዬይዮዯደዱዲዳዴድዶዷዸዹዺዻዼዽዾዿጀጁጂጃጄጅጆጇገጉጊጋጌግጎጏጐጒጓጔጕጠጡጢጣጤጥጦጧጨጩጪጫጬጭጮጯጰጱጲጳጴጵጶጷጸጹጺጻጼጽጾፀፁፂፃፄፅፆፇፈፉፊፋፌፍፎፐፑፒፓፔፕፖፗፘ';
     const alphabet = includeEnglish ? 'ABCDEFGHIJKLMNOPQRSTUVWXYZ' : '';
     const numbers = includeNumbers ? '0123456789' : '';
     const symbols = includeSymbols ? '!@#$%^&*()+' : '';
@@ -53,7 +52,10 @@ function App() {
             <Button className="min-w-[72px]" onClick={() => generateText()}>Button</Button>
 
 
+
           </div>
+          <Button><a href='https://github.com/hmhard/amharic-password-generator'>View On Github</a> </Button>
+        
         </CardBody>
       </Card>
     </div>
