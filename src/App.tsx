@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Button, Card, CardBody, Checkbox, Input, Option, Select, Typography } from '@material-tailwind/react';
+import { Button, Card, CardBody, CardFooter, Checkbox, Input, Option, Select, Typography } from '@material-tailwind/react';
 
 function App() {
   const generateText = () => {
@@ -54,9 +54,11 @@ function App() {
 
 
           </div>
-          <Button variant="text"><a href='https://github.com/hmhard/amharic-password-generator'>View On Github</a> </Button>
         
         </CardBody>
+        <CardFooter>
+          <Button variant="text"><a href='https://github.com/hmhard/amharic-password-generator'>View On Github</a> </Button>
+        </CardFooter>
       </Card>
     </div>
 
