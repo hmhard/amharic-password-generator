@@ -30,6 +30,7 @@ function App() {
 
         <CardBody className="flex flex-row gap-4 flex-col ">
 
+          <Typography variant='h3' >የአማርኛ የይለፍ ቃል አመንጪ</Typography>
           <Typography variant='h3' > Amharic Password Generator</Typography>
           <Input size="lg" value={password} readOnly />
 
@@ -49,7 +50,7 @@ function App() {
             <Checkbox checked={includeEnglish} onChange={(e) => setIncludeEnglish(!includeEnglish)} id='english-checkbox' label="Include English Alphabet{A-Z}" ripple={true} />
             <Checkbox checked={includeNumbers} onChange={(e) => setIncludeNumbers(!includeNumbers)} id='numbers-checkbox' label="Allow Numbers (0-9)" ripple={true} />
             <Checkbox checked={includeSymbols} onChange={(e) => setIncludeSymbols(!includeSymbols)} id='symbols-checkbox' label="Allow Symbols (!@#$%^&*()+)" ripple={true} />
-            <Button className="min-w-[72px]" onClick={() => generateText()}>Button</Button>
+            <Button className="min-w-[72px]" onClick={() => generateText()}>አመንጭ/Generate</Button>
 
 
 
