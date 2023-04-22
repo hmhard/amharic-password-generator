@@ -1,6 +1,10 @@
 import React, { useState } from 'react';
 import { Button, Card, CardBody, CardFooter, Checkbox, Input, Option, Select, Typography } from '@material-tailwind/react';
-
+import {
+  ArrowLongRightIcon,
+  ArrowPathIcon,
+ 
+} from "@heroicons/react/24/outline"
 function App() {
   const generateText = () => {
     let result = '';
@@ -50,7 +54,10 @@ function App() {
             <Checkbox checked={includeEnglish} onChange={(e) => setIncludeEnglish(!includeEnglish)} id='english-checkbox' label="Include English Alphabet{A-Z}" ripple={true} />
             <Checkbox checked={includeNumbers} onChange={(e) => setIncludeNumbers(!includeNumbers)} id='numbers-checkbox' label="Allow Numbers (0-9)" ripple={true} />
             <Checkbox checked={includeSymbols} onChange={(e) => setIncludeSymbols(!includeSymbols)} id='symbols-checkbox' label="Allow Symbols (!@#$%^&*()+)" ripple={true} />
-            <Button className="min-w-[72px]" onClick={() => generateText()}>አመንጭ/Generate</Button>
+            <Button  className=" flex items-center gap-3 " size="sm" onClick={() => generateText()}>አመንጭ/Generate
+            <ArrowPathIcon strokeWidth={2} className=" w-5" />
+    
+            </Button>
 
 
 
@@ -58,7 +65,7 @@ function App() {
         
         </CardBody>
         <CardFooter>
-          <Button variant="text"><a href='https://github.com/hmhard/amharic-password-generator'>View On Github</a> </Button>
+          <Button className='flex items-center gap-3' variant="text"><a href='https://github.com/hmhard/amharic-password-generator'>View On Github</a> <ArrowLongRightIcon strokeWidth={2} className="h-5 w-5" /> </Button>
         </CardFooter>
       </Card>
     </div>
