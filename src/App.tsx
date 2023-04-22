@@ -54,7 +54,7 @@ function App() {
 
 
           </div>
-          <Button><a href='https://github.com/hmhard/amharic-password-generator'>View On Github</a> </Button>
+          <Button variant="text"><a href='https://github.com/hmhard/amharic-password-generator'>View On Github</a> </Button>
         
         </CardBody>
       </Card>
