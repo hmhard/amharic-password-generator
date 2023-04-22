@@ -1,6 +1,6 @@
-# Getting Started with Create React App
+# Amharic Password generator
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+![Amharic password generator](public/Capture.PNG)
 
 ## Available Scripts
 
