@@ -40,6 +40,8 @@ function App() {
   };
 
   const handleCopy = () => {
+    if(!password)
+    return;
     setOpenPopover(true);
     copy(password);
     setCopied(true);
@@ -60,7 +62,7 @@ function App() {
           <Typography variant='h3' > Amharic Password Generator</Typography>
           <div className="relative flex w-full   mr-5">
 
-            <Input size="lg" value={password} readOnly />
+            <Input size="lg" value={password} onClick={handleCopy} readOnly />
             <Popover open={openPopover} handler={handleCopy}>
               <PopoverHandler >
                 <Button color="blue" onClick={handleCopy} >
