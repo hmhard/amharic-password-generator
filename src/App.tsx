@@ -10,19 +10,19 @@ import {
   ClipboardIcon,
 
 } from "@heroicons/react/24/outline"
-import { AMHARIC_LETTERS, ENGLISH_LETTERS, NUMBERS, SYMBOLS } from './shared/constants';
+import { AMHARIC_LETTERS, DEFAULT_PASSWORD_LENGTH, ENGLISH_LETTERS, NUMBERS, SYMBOLS } from './shared/constants';
 import copy from 'copy-to-clipboard';
 
 
 function App() {
 
-  const [passwordLength, setpasswordLength] = useState(12)
-  const [includeEnglish, setIncludeEnglish] = useState(false)
-  const [includeNumbers, setIncludeNumbers] = useState(false)
-  const [includeSymbols, setIncludeSymbols] = useState(false)
-  const [openPopover, setOpenPopover] = useState(false)
-  const [_,setCopied] = useState(false)
-  const [password, setPassword] = useState("")
+  const [passwordLength, setpasswordLength] = useState<number>(DEFAULT_PASSWORD_LENGTH);
+  const [includeEnglish, setIncludeEnglish] = useState<boolean>(false);
+  const [includeNumbers, setIncludeNumbers] = useState<boolean>(false);
+  const [includeSymbols, setIncludeSymbols] = useState<boolean>(false);
+  const [openPopover, setOpenPopover] = useState<boolean>(false);
+  const [_,setCopied] = useState<boolean>(false);
+  const [password, setPassword] = useState<string>("");
   const number_sequence = [...Array(30)].map((i, index) => index + 10);
   const generateText = () => {
     let result = '';
@@ -88,9 +88,9 @@ function App() {
               </Select>
             </div>
 
-            <Checkbox checked={includeEnglish} onChange={(e) => setIncludeEnglish(!includeEnglish)} id='english-checkbox' label="Include English Alphabet{A-Z}" ripple={true} />
-            <Checkbox checked={includeNumbers} onChange={(e) => setIncludeNumbers(!includeNumbers)} id='numbers-checkbox' label="Allow Numbers (0-9)" ripple={true} />
-            <Checkbox checked={includeSymbols} onChange={(e) => setIncludeSymbols(!includeSymbols)} id='symbols-checkbox' label="Allow Symbols (!@#$%^&*()+)" ripple={true} />
+            <Checkbox checked={includeEnglish} onChange={(_e) => setIncludeEnglish(!includeEnglish)} id='english-checkbox' label="Include English Alphabet{A-Z}" ripple={true} />
+            <Checkbox checked={includeNumbers} onChange={(_e) => setIncludeNumbers(!includeNumbers)} id='numbers-checkbox' label="Allow Numbers (0-9)" ripple={true} />
+            <Checkbox checked={includeSymbols} onChange={(_e) => setIncludeSymbols(!includeSymbols)} id='symbols-checkbox' label="Allow Symbols (!@#$%^&*()+)" ripple={true} />
             <Button className=" flex items-center gap-3 p-1 px-3 " size="sm" onClick={() => generateText()}>አመንጭ/Generate
               <ArrowPathIcon strokeWidth={2} className=" w-5" />
             </Button>

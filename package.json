@@ -5,8 +5,6 @@
   "dependencies": {
     "@heroicons/react": "^2.0.17",
     "@material-tailwind/react": "^1.4.2",
-    "@testing-library/jest-dom": "^5.16.5",
-    "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
     "@types/jest": "^27.5.2",
     "@types/node": "^16.18.24",
@@ -45,6 +43,8 @@
     ]
   },
   "devDependencies": {
+    "@testing-library/jest-dom": "^6.4.6",
+    "@testing-library/react": "^16.0.0",
     "tailwindcss": "^3.3.1"
   }
 }
