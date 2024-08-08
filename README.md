@@ -4,8 +4,10 @@
 
 ## to get into it
 ```bash
-npm start
-npm test
 npm run build
+npm start
+# to test it
+npm test
+
 ```
 ## if you like it give me the star
