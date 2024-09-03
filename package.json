@@ -6,7 +6,7 @@
         "@heroicons/react": "^2.0.17",
         "@material-tailwind/react": "^1.4.2",
         "@testing-library/user-event": "^13.5.0",
-        "@types/jest": "^27.5.2",
+        "@types/jest": "^26.0.14 || ^27.0.0",
         "@types/node": "^16.18.24",
         "@types/react": "^18.0.37",
         "@types/react-dom": "^18.0.11",
